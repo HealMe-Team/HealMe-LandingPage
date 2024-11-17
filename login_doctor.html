@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HEALME</title>
+    <link rel="stylesheet" href="assets/css/logindoctor.css">
+</head>
+<body>
+
+<div class="login-container" aria-label="Contenedor principal de inicio de sesión">
+    <div class="login-box" aria-label="Caja de inicio de sesión">
+        <!-- Sección de Iniciar sesión -->
+        <div class="login-left" aria-label="Sección para iniciar sesión">
+            <h2>Login</h2>
+            <div class="social-login" aria-label="Opciones de inicio de sesión con redes sociales">
+                
+                <button aria-label="Iniciar sesión con Google" class="social-btn google">G+</button>
+                <button aria-label="Iniciar sesión con Facebook" class="social-btn facebook">f</button>
+                <button aria-label="Iniciar sesión con GitHub" class="social-btn github">G</button>
+                <button aria-label="Iniciar sesión con LinkedIn" class="social-btn linkedin">in</button>
+            </div>
+            <p>or use your email password</p>
+            <form id="loginForm" aria-label="Formulario de inicio de sesión">
+                <label for="email" aria-label="Correo electrónico">
+                    <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+                </label>
+                <label for="password" aria-label="Contraseña">
+                    <input type="password" id="password" name="password" placeholder="Password" required aria-required="true">
+                </label>
+                <a href="#" aria-label="Recuperar contraseña">¿Forgot your password?</a>
+                <!-- Botón de inicio de sesión -->
+                <button aria-label="Iniciar sesión" type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+
+        <!-- Sección de Registro -->
+        <div class="login-right" aria-label="Sección para registrarse">
+            <h2>Hi, Healme!</h2>
+            <p>Register with your personal data to access all features 💪</p>
+            <a href="registro_doctor.html" aria-label="Ir a la página de registro" class="register-btn">Register</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

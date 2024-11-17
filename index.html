@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALME - Tu Atención Médica Internacional</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Sección del Video de fondo -->
+    <section class="hero-section" aria-label="Sección de introducción con video de fondo">
+        <div class="video-container" aria-hidden="true">
+            <video autoplay loop muted playsinline aria-label="Video de fondo promocional">
+                <source src="assets/video/videolanding.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <!-- Logo -->
+            <div class="logo" aria-label="Logo de HEALME">
+                <img src="assets/img/logo.png" alt="HEALME Logo">
+            </div>
+
+            <!-- Título y descripción -->
+            <h1>Your Health, Wherever You Are</h1>
+            <p>Medical care at your fingertips, no matter where you are in the world.</p>
+
+           
+            <div class="buttons" aria-label="Opciones principales de navegación">
+               
+                <button id="loginBtn" aria-label="Abrir opciones de inicio de sesión">Login</button>
+                <div id="dropdownLogin" class="dropdown" aria-label="Menú de inicio de sesión">
+                    <a href="https://heal-me-app.netlify.app/" id="loginDoctor" aria-label="Iniciar sesión como Doctor">Doctor</a>
+                    <a href="https://heal-me-app.netlify.app/" id="loginUsuario" aria-label="Iniciar sesión como Usuario">Usuario</a>
+                </div>
+
+                <!-- Botón de Register -->
+                <button id="signupBtn" aria-label="Abrir opciones de registro">Register</button>
+                <div id="dropdownSignup" class="dropdownRegister" aria-label="Menú de registro">
+                    <a href="https://heal-me-app.netlify.app/" id="registerDoctor" aria-label="Registrarse como Doctor">Doctor</a>
+                    <a href="https://heal-me-app.netlify.app/" id="registerUsuario" aria-label="Registrarse como Usuario">Usuario</a>
+                </div>
+
+                <!-- Botón de Contact -->
+                <button id="contactBtn" aria-label="Ir a la sección de contacto">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Descripción -->
+    <section class="description-section" aria-label="Sección sobre nosotros">
+        <div class="container">
+            <h2>About HEALME</h2>
+            <p>
+                HEALME is a platform designed to connect travelers, expatriates, and professionals abroad with reliable medical services, regardless of their geographic location. With HEALME, you can find trusted clinics, hospitals, and doctors in your language, compare prices and ratings, and book appointments with ease.
+            </p>
+            <p>
+                Our goal is to make international medical care accessible, efficient, and safe for everyone, eliminating language barriers and simplifying the process of seeking quality medical care anywhere in the world.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Sección de Reseñas -->
+    <section class="reviews-section" aria-label="Sección de reseñas de usuarios">
+        <div class="container">
+            <h2>What our users say</h2>
+            <div class="reviews">
+                <div class="review" aria-label="Reseña de Juan Pérez">
+                    <img src="assets/img/juan_perez.jpg" alt="Foto de Juan Pérez">
+                    <p>“The best international medical service. I felt in good hands during my trip.”</p>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="review" aria-label="Reseña de María López">
+                    <img src="assets/img/maria_lopez.jpg" alt="Foto de María López">
+                    <p>“Fast and efficient service, even in a foreign country, highly recommended!”</p>
+                    <span>- María López</span>
+                </div>
+                <div class="review" aria-label="Reseña de Carlos Rodríguez">
+                    <img src="assets/img/carlos_rodriguez.jpg" alt="Foto de Carlos Rodríguez">
+                    <p>“HEALME helped me find a clinic within minutes - excellent service!”</p>
+                    <span>- Carlos Rodríguez</span>
+                </div>
+            </div>
+        </div>
+        <div class="videos" aria-label="Sección de videos promocionales">
+            <h2>Watch our platform in action</h2>
+            <div class="video-aboutme">
+                <iframe 
+                    src="https://www.youtube.com/embed/VCpDMxmQBKk" 
+                    title="Video 1: About HEALME" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <iframe 
+                    src="https://www.youtube.com/embed/PtD0y8Mg79s" 
+                    title="Video 2: HEALME Features" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section" aria-label="Sección de contacto">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Request more information by filling out the following form:</p>
+
+            <form action="enviar_formulario.php" method="POST" aria-label="Formulario de contacto">
+                <div class="form-group">
+                    <label for="name" aria-label="Nombre">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" aria-label="Correo electrónico">E-mail address:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="country" aria-label="País">Country:</label>
+                    <input type="text" id="country" name="country" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="city" aria-label="Ciudad">City:</label>
+                    <input type="text" id="city" name="city" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" aria-label="Mensaje">Message:</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+
+                <button type="submit" aria-label="Enviar formulario">Send</button>
+            </form>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

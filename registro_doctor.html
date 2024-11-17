@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Usuario</title>
+    <link rel="stylesheet" href="assets/css/registrodoctor.css">
+</head>
+<body>
+    <div class="form-container" aria-label="Contenedor principal del formulario de registro de usuario">
+        <div class="profile-icon" aria-label="Sección de icono de perfil">
+            <img src="https://cdn-icons-png.freepik.com/512/6681/6681213.png" alt="Icono de perfil de usuario">
+        </div>
+        <form id="userForm" aria-label="Formulario de registro de usuario">
+            <label for="names" aria-label="Nombres">
+                <input type="text" id="names" name="names" placeholder="Names" required aria-required="true">
+            </label>
+            <label for="surname" aria-label="Apellidos">
+                <input type="text" id="surname" name="surname" placeholder="Surname" required aria-required="true">
+            </label>
+            <label for="telephone" aria-label="Número de teléfono">
+                <input type="text" id="telephone" name="telephone" placeholder="Telephone number" required aria-required="true">
+            </label>
+            <label for="identity_card" aria-label="Documento de identidad">
+                <input type="text" id="identity_card" name="identity_card" placeholder="Identity card" class="full-width" required aria-required="true">
+            </label>
+            <label for="country" aria-label="País de residencia">
+                <input type="text" id="country" name="country" placeholder="Country of residence" required aria-required="true">
+            </label>
+            <label for="specialty" aria-label="Especialidad">
+                <input type="text" id="specialty" name="specialty" placeholder="Specialty" required aria-required="true">
+            </label>
+            <label for="address" aria-label="Dirección">
+                <input type="text" id="address" name="address" placeholder="Address" class="full-width" required aria-required="true">
+            </label>
+            <label for="clinic" aria-label="Clínica u hospital">
+                <input type="text" id="clinic" name="clinic" placeholder="Clínica Santa María | Hospital Nacional Edgardo Rebagliati | Clínica San Pablo" class="full-width" required aria-required="true">
+            </label>
+            <label for="email" aria-label="Correo electrónico">
+                <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+            </label>
+            <label for="password" aria-label="Contraseña">
+                <input type="password" id="password" name="password" placeholder="Password" required aria-required="true">
+            </label>
+            <button type="submit" class="save-btn" aria-label="Guardar el formulario de registro">Save</button>
+        </form>
+    </div>
+</body>
+</html>
